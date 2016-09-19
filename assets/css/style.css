@@ -1,0 +1,142 @@
+.dragdrop {
+  border:#aaa dashed 2px;
+  text-align:center;
+  border-radius:5px;
+  color:#777;
+  font-size:1.5em;
+  padding:100px 0;
+}
+
+.nowphoto {
+  background:#fff;
+}
+
+.nowphoto img {
+  width:100%;
+}
+
+.dragdrop-container {
+  display:none;
+}
+
+.focus {position:relative;}
+.photo {position:relative;border-radius:4px;overflow:hidden;cursor:pointer;}
+.photo img {
+  width:100%;
+}
+
+.focus .photo:before {
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  background:rgba(255,255,255,0.4);
+}
+.focus .photo:after {
+  content:'\f05d';
+  position:absolute;
+  font-family:'FontAwesome';
+  top:50%;
+  left:50%;
+  font-size:50px;
+  line-height:50px;
+  transform:translate(-50%,-50%);
+  color:#fff;
+}
+
+.photo-status {
+  display:none;
+  position:absolute;
+  z-index:99;
+  right:10px;
+  top:10px;
+  color:#000;
+  font-size:2rem;
+}
+
+.photo-menu {
+  top:40px;
+  right:0;
+  border: 1px solid rgba(0,0,0,.01);
+  box-shadow: rgba(0,0,0,.05) 0 3px 10px;;
+  border-radius:5px;
+}
+
+.photo-menu > li:first-child > a {
+  border-radius: 5px 5px 0 0;
+}
+.photo-menu > li:last-child > a {
+  border-radius: 0 0 5px 5px;
+  color:#fff;
+}
+.photo-menu > li:last-child > a:hover {
+  color:#FF4A55;
+  background-color:#fff;
+}
+.rename {
+  border-right: #eee solid 1px;
+  padding-right:30px;
+}
+.form-result {
+  color: #aaa;
+  margin-top:20px;
+  padding:5px 30px;
+}
+
+.focus .photo-status {
+  display:block;
+}
+.navbar-nav {
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.articul {
+  padding:15px 30px;
+  padding-right:15px;
+  margin-left:30px;
+  border-left:#eee solid 1px;
+}
+.color {
+  padding-top:15px;
+  padding-right:15px;
+}
+
+button.btn[data-toggle="modal"] {
+  position:absolute;
+  top:10px;
+  right:10px;
+}
+.label-default {
+  background:#fff;
+  color:#777;
+  border:rgba(0,0,0,0.1) solid 1px;
+}
+.sub-menu {
+  list-style:none;
+  margin:0;
+  padding:0;
+  margin-bottom:20px;
+}
+.sub-menu:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.sub-menu li {
+  float:left;
+  margin-right:10px;
+}
+.dashboard-num {
+  font-size:5em;
+  line-height:1.5em;
+  font-weight:800;
+}
+.login {
+  background:#eee;
+  background-size:cover;
+}
+.login .content {
+  position:relative;
+  top:50%;
+  transform:translateY(-60%);
+}

@@ -16,6 +16,7 @@
 
 	$commands = array(
 		'echo $PWD',
+		'cd $pwd',
 		'git pull origin master',
 		'git status'
 	);

@@ -7,7 +7,7 @@
 	 *		https://gist.github.com/1809044
 	 */
 	// The commands
-	$secret = 'fkdjn(*#$HNEJKCFV*#@DINCDS()CYGTYU#@Dcdijshv872cwsd)';
+	$secret = 'fkdjn(*$HNEJKCFV*@DINCDS()CYGTYU@Dcdijshv872cwsd)';
 
 	if (!isset($_GET['secret']) || $_GET['secret'] != $secret) {
 		header('Location: /');

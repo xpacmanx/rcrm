@@ -1,6 +1,6 @@
 <?php header('Content-Type: text/html; charset=utf-8');?><html>
 <head>
-  <title>Фотографии</title>
+  <title>Настройки</title>
   <?php require_once "templates/scripts.tpl" ;?>
 </head>
 <body>

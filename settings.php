@@ -35,7 +35,7 @@
           ?>
 
           <div class="content">
-            <p class="text-center">Демонстрационная версия</p>
+            <p class="text-center">Демонстрационная версия!</p>
           </div>
 
       </div>

@@ -7,14 +7,16 @@
 	 *		https://gist.github.com/1809044
 	 */
 	// The commands
+	$secret = 'fkdjn(*#$HNEJKCFV*#@DINCDS()CYGTYU#@Dcdijshv872cwsd)';
+
+	if (!isset($_GET['secret']) || $_GET['secret'] != $secret) {
+		header('Location: /');
+		die();
+	}
+
 	$commands = array(
-		'echo $PWD',
-		'whoami',
-		'git pull',
-		'git status',
-		'git submodule sync',
-		'git submodule update',
-		'git submodule status',
+		'git pull origin master',
+		'git status'
 	);
 	// Run the commands for output
 	$output = '';

@@ -16,7 +16,7 @@
 
 	$commands = array(
 		'echo $PWD',
-		'cd $PWD',
+		'cd '.dirname(__FILE__),
 		'git pull origin master',
 		'git status'
 	);
